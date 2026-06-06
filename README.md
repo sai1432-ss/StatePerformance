@@ -4,30 +4,6 @@ A unified performance benchmarking workbench for evaluating and comparing render
 
 ---
 
-## 📂 Project Architecture
-
-```text
-my-benchmark-repository/
-├── 📂 bundle-analysis/          # Requirement 7: Treemap visualization artifacts
-├── 📂 profiling/                # Requirement 6: React DevTools flamegraph captures
-├── 📂 src/
-│   ├── App.jsx                  # Master workbench orchestration engine
-│   ├── main.jsx                 # Global application entry point
-│   └── implementations/
-│       ├── 01-context-naive/    # Requirement 2: Naive vs. Split Context implementations
-│       │   └── src/
-│       │       ├── native/      # Raw unoptimized cascading context branch
-│       │       └── optimized/   # Multi-provider isolated context branch
-│       ├── 03-zustand/          # Requirement 3: Atomic selector Zustand implementation
-│       └── 04-redux-toolkit/    # Requirement 4: Modern Redux slice implementation
-├── 📄 Dockerfile                # Requirement 9: Multi-stage container compilation script
-├── 📄 docker-compose.yml        # Requirement 9: Production orchestration config with healthcheck
-├── 📄 nginx.conf                # Requirement 9: Core routing rule configurations
-└── 📄 RESULTS.md                # Requirement 8: Markdown benchmark matrix and decision guide
-```
-
----
-
 ## 🚀 Getting Started & Local Development
 
 ### 1. Install Dependencies

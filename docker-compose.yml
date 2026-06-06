@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  benchmark-dashboard:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: react_state_benchmark
+    ports:
+      - "8080:80"
+    restart: unless-stopped
